@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F392B3FF-57CE-4E10-A57A-B8D0422C831F}</ProjectGuid>
+    <ProjectGuid>{1669A111-8FE3-4917-89A7-16E7CE167B31}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sispar.Core</RootNamespace>
