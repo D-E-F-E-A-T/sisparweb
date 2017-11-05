@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sispar.Core", "Sispar.Core\Sispar.Core.csproj", "{1669A111-8FE3-4917-89A7-16E7CE167B31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sispar.UI.WebApp", "Sispar.UI.WebApp\Sispar.UI.WebApp.csproj", "{6A11E2C0-5A4F-45D6-B7C0-9C2F29F4DE18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1669A111-8FE3-4917-89A7-16E7CE167B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1669A111-8FE3-4917-89A7-16E7CE167B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1669A111-8FE3-4917-89A7-16E7CE167B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A11E2C0-5A4F-45D6-B7C0-9C2F29F4DE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A11E2C0-5A4F-45D6-B7C0-9C2F29F4DE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A11E2C0-5A4F-45D6-B7C0-9C2F29F4DE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A11E2C0-5A4F-45D6-B7C0-9C2F29F4DE18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
