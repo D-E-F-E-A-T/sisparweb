@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\ITither.cs" />
+    <Compile Include="Contracts\IUser.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Tither.cs" />
     <Compile Include="Entities\User.cs" />
