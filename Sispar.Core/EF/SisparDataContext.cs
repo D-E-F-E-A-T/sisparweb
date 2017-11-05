@@ -6,15 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Sispar.Core.Helpers;
+using Sispar.Core.Contracts;
 
 namespace Sispar.Core.EF
 {
     public class SisparDataContext : DbContext
     {
         public SisparDataContext()
-            : base("")
+            : base(Constants.CONNECTION_STRING_PRODUCAO)
         {
-
+            Database.SetInitializer(new InitialLoad());
         }
 
         public DbSet<User> Users { get; set; }

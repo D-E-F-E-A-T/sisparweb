@@ -23,7 +23,7 @@ namespace Sispar.Core.Entities
         [MaxLength(100)]
         public string Password { get; set; }
 
-        [Column("ACTIVE", TypeName = "bit")]
-        public int Active { get; set; } = 1;
+        [Column("ACTIVE")]
+        public Boolean Active { get; set; } = true;
     }
 }

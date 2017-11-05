@@ -9,5 +9,6 @@ namespace Sispar.Core.Contracts
 {
     public interface IUser : IRepository<User>
     {
+        User GetByUserName(string userName);
     }
 }

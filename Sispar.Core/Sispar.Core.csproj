@@ -52,6 +52,8 @@
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="Contracts\ITither.cs" />
     <Compile Include="Contracts\IUser.cs" />
+    <Compile Include="EF\Repositories\Repository.cs" />
+    <Compile Include="EF\Repositories\UserRepository.cs" />
     <Compile Include="EF\SisparDataContext.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Tither.cs" />

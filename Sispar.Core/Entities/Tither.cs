@@ -52,7 +52,7 @@ namespace Sispar.Core.Entities
         [Column("DATE_BIRTH_SPOUSE", TypeName = "date")]
         public  DateTime? DateBirthSpouse { get; set; }
 
-        [Column("ACTIVE", TypeName = "bit")]
-        public int Active { get; set; } = 1;
+        [Column("ACTIVE")]
+        public Boolean Active { get; set; } = true;
     }
 }

@@ -23,6 +23,28 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("LogIn", "Account")">Log In</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Olá @User.Identity.Name
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- <a class="dropdown-item" href="@*Url.Action("MeuPerfil", "Conta")*@">Meu perfil</a>
+                                <a class="dropdown-item" href="@*Url.Action("Index", "Logs")*@">Log</a>-->
+                                <!--<div class="dropdown-divider"></div>
+                                <button id="senhaBtn" class="dropdown-item btn btn-link">Alterar minha senha</button>-->
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="@Url.Action("LogOut", "Account")">Log Out</a>
+                            </div>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
