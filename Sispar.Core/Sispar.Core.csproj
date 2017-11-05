@@ -48,13 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Tither.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contracts\" />
     <Folder Include="EF\" />
   </ItemGroup>
   <ItemGroup>
