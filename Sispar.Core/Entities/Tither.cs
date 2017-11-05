@@ -46,13 +46,13 @@ namespace Sispar.Core.Entities
         public string Cellphone { get; set; }
 
         [Column("NAME_SPOUSE", TypeName = "varchar")]
-        [MaxLength(100)])]
+        [MaxLength(100)]
         public string NameSpouse { get; set; }
 
         [Column("DATE_BIRTH_SPOUSE", TypeName = "date")]
         public  DateTime? DateBirthSpouse { get; set; }
 
         [Column("ACTIVE", TypeName = "bit")]
-        public int Active { get; set; }
+        public int Active { get; set; } = 1;
     }
 }

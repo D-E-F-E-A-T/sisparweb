@@ -24,6 +24,6 @@ namespace Sispar.Core.Entities
         public string Password { get; set; }
 
         [Column("ACTIVE", TypeName = "bit")]
-        public int Active { get; set; }
+        public int Active { get; set; } = 1;
     }
 }

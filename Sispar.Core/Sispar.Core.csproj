@@ -48,17 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Contracts\Constants.cs" />
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="Contracts\ITither.cs" />
     <Compile Include="Contracts\IUser.cs" />
+    <Compile Include="EF\SisparDataContext.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Tither.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EF\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
