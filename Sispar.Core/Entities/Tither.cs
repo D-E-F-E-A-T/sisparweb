@@ -16,38 +16,43 @@ namespace Sispar.Core.Entities
         public int Id { get; set; }
 
         [Column("NAME_TITHER", TypeName = "varchar")]
-        [MaxLength(15)]
+        [MaxLength(100)]
         public string Name { get; set; }
 
         [Column("ADDRESS_TITHER", TypeName = "varchar")]
-        [MaxLength(40)]
+        [MaxLength(200)]
         public string Address { get; set; }
 
-        [Column("MATIRAL_STATUS")]
+        [Column("MATIRAL_STATUS", TypeName = "char")]
+        [MaxLength(1)]
         public string MatiralStatus { get; set; }
 
-        [Column("BIRTH_DATE")]
+        [Column("BIRTH_DATE", TypeName = "date")]
         public DateTime BirthDate { get; set; }
 
-        [Column("CPF_TITHER")]
+        [Column("CPF_TITHER", TypeName = "varchar")]
+        [MaxLength(20)]
         public string CPF { get; set; }
 
-        [Column("MARRIAGE_DATE")]
+        [Column("MARRIAGE_DATE", TypeName = "date")]
         public DateTime MarriegeDate { get; set; }
 
-        [Column("TELEPHONE")]
+        [Column("TELEPHONE", TypeName = "varchar")]
+        [MaxLength(20)]
         public string Telephone { get; set; }
 
-        [Column("CELLPHONE")]
+        [Column("CELLPHONE", TypeName = "varchar")]
+        [MaxLength(20)]
         public string Cellphone { get; set; }
 
-        [Column("NAME_SPOUSE")]
+        [Column("NAME_SPOUSE", TypeName = "varchar")]
+        [MaxLength(100)])]
         public string NameSpouse { get; set; }
 
-        [Column("DATE_BIRTH_SPOUSE")]
+        [Column("DATE_BIRTH_SPOUSE", TypeName = "date")]
         public  DateTime? DateBirthSpouse { get; set; }
 
-        [Column("ACTIVE")]
+        [Column("ACTIVE", TypeName = "bit")]
         public Boolean Active { get; set; }
     }
 }
