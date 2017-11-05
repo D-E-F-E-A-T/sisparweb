@@ -21,7 +21,7 @@ namespace Sispar.UI.WebApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(User login)
+        public ActionResult LogIn(User login)
         {
             ModelState.Clear();
             var usuario = _ctx.GetByUserName(login.UserName.ToLower());
