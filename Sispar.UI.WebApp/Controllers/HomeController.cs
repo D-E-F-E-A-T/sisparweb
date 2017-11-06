@@ -15,7 +15,7 @@ namespace Sispar.UI.WebApp.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Sistema Integrado de Paróquias";
 
             return View();
         }
