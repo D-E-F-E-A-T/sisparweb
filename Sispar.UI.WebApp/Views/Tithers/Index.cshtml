@@ -19,6 +19,7 @@
             <th>Dt. Nascimento</th>
             <th>CPF</th>
             <th>Nome da Esposa</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
                 <td>@tither.BirthDate.ToString("dd/MM/yyyy")</td>
                 <td>@tither.CPF</td>
                 <td>@tither.NameSpouse</td>
+                <td><a href="/Tithers/Delete/@tither.Id">Excluir</a></td>
             </tr>
         }
     </tbody>

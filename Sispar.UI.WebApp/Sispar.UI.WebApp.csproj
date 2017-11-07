@@ -196,6 +196,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\LogIn.cshtml" />
     <Content Include="Views\Tithers\Index.cshtml" />
+    <Content Include="Views\Tithers\Add.cshtml" />
+    <Content Include="Views\Tithers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
