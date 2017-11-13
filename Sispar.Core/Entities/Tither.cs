@@ -23,9 +23,8 @@ namespace Sispar.Core.Entities
         [MaxLength(200)]
         public string Address { get; set; }
 
-        [Column("MATIRAL_STATUS", TypeName = "char")]
-        [MaxLength(1)]
-        public string MatiralStatus { get; set; }
+        [Column("MATIRAL_STATUS")]
+        public MatiralStatus MatiralStatus { get; set; }
 
         [Column("BIRTH_DATE", TypeName = "date")]
         public DateTime BirthDate { get; set; }
@@ -34,9 +33,6 @@ namespace Sispar.Core.Entities
         [MaxLength(20)]
         public string CPF { get; set; }
 
-        [Column("MARRIAGE_DATE", TypeName = "date")]
-        public DateTime MarriegeDate { get; set; }
-
         [Column("TELEPHONE", TypeName = "varchar")]
         [MaxLength(20)]
         public string Telephone { get; set; }
@@ -44,6 +40,9 @@ namespace Sispar.Core.Entities
         [Column("CELLPHONE", TypeName = "varchar")]
         [MaxLength(20)]
         public string Cellphone { get; set; }
+
+        [Column("MARRIAGE_DATE", TypeName = "date")]
+        public DateTime? MarriegeDate { get; set; }
 
         [Column("NAME_SPOUSE", TypeName = "varchar")]
         [MaxLength(100)]

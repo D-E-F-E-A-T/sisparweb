@@ -198,6 +198,7 @@
     <Content Include="Views\Tithers\Index.cshtml" />
     <Content Include="Views\Tithers\Add.cshtml" />
     <Content Include="Views\Tithers\Delete.cshtml" />
+    <Content Include="Views\Tithers\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,6 +13,8 @@ namespace Sispar.UI.WebApp.Controllers
     {
         private readonly TitherRepository _ctx = new TitherRepository();
 
+        public dynamic MaterialStatus { get; private set; }
+
         public ActionResult Index()
         {
             var tithers = _ctx.GetAll().OrderBy(t => t.Name);
@@ -27,13 +29,34 @@ namespace Sispar.UI.WebApp.Controllers
         [HttpPost]
         public ActionResult Add(Tither tither)
         {
-            tither.NameSpouse = "AAAA";
-            tither.MarriegeDate = DateTime.Now;
-            tither.MatiralStatus = "2";
+           // tither.MatiralStatus = MatiralStatus.Divorciado;
 
             _ctx.Add(tither);
 
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var tither = _ctx.GetById(id);
+
+            if (tither == null)
+                return HttpNotFound();
+
+            return View(tither);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Tither tither)
+        {
+            if (ModelState.IsValid)
+            {
+                _ctx.Edit(tither);
+                return RedirectToAction("Index");
+            }
+
+            return View("Edit", tither);
+
         }
 
         public ActionResult Delete(int id)

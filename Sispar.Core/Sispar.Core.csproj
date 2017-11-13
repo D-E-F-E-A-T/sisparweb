@@ -57,6 +57,7 @@
     <Compile Include="EF\Repositories\UserRepository.cs" />
     <Compile Include="EF\SisparDataContext.cs" />
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\MatiralStatus.cs" />
     <Compile Include="Entities\Tither.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Helpers\StringHelper.cs" />

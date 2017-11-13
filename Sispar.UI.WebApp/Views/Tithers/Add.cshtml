@@ -5,6 +5,8 @@
 
 <h2>Novo Dizimista</h2>
 
+<hr />
+
 <form  method="post">
     <div class="form-group">
         <label>Nome</label>
@@ -33,6 +35,15 @@
     <div class="form-group">
         <label>Celular</label>
         <input class="form-control" type="text" name="cellPhone" />
+    </div>
+
+    <div class="form-group">
+        <label>Tipo</label>
+
+        @Html.DropDownList("MatiralStatus",
+            EnumHelper.GetSelectList(typeof(Sispar.Core.Entities.MatiralStatus)),
+            "Selecione.....",
+            new { @class = "form-control" })
     </div>
 
 

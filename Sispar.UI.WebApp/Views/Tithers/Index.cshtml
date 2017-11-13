@@ -6,6 +6,8 @@
 
 <h2>Listagem de Dizimistas</h2>
 
+<hr />
+
 <div>
     <a class="btn btn-info" href="./Tithers/Add">Adicionar Dizimista</a>
 </div>
@@ -18,7 +20,7 @@
             <th>Nome</th>
             <th>Dt. Nascimento</th>
             <th>CPF</th>
-            <th>Nome da Esposa</th>
+            <th>Estado Civil</th>
             <th></th>
         </tr>
     </thead>
@@ -29,8 +31,12 @@
                 <td>@tither.Name</td>
                 <td>@tither.BirthDate.ToString("dd/MM/yyyy")</td>
                 <td>@tither.CPF</td>
-                <td>@tither.NameSpouse</td>
-                <td><a href="/Tithers/Delete/@tither.Id">Excluir</a></td>
+                <td>@tither.MatiralStatus</td>
+               
+                <td>
+                    <a class="btn btn-primary" href="/Tithers/Edit/@tither.Id"><i class="fa fa-pencil-square-o"></i></a>
+                    <a class="btn btn-danger" href="/Tithers/Delete/@tither.Id"><i class="fa fa-trash"></i></a>
+                </td>
             </tr>
         }
     </tbody>
