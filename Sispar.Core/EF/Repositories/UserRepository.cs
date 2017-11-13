@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Sispar.Core.EF.Repositories
 {
-    public class UserRepository : Repositor<User>, IUser
+    public class UserRepository : Repository<User>, IUser
     {
         public User GetByUserName(string userName)
         {

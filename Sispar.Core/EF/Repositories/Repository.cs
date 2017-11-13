@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Sispar.Core.EF.Repositories
 {
-    public class Repositor<T> : IRepository<T> where T : Entity
+    public class Repository<T> : IRepository<T> where T : Entity
     {
         protected readonly SisparDataContext _ctx = new SisparDataContext();
 
