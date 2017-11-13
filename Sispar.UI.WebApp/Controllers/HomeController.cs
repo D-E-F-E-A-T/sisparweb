@@ -22,7 +22,7 @@ namespace Sispar.UI.WebApp.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Factory Solution IT";
 
             return View();
         }
