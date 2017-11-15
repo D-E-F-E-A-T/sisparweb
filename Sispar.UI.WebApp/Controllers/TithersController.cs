@@ -43,6 +43,24 @@ namespace Sispar.UI.WebApp.Controllers
             if (tither == null)
                 return HttpNotFound();
 
+            var strDateBirthSpouse = "";
+            if (tither.DateBirthSpouse != null)
+            {
+                DateTime myDateBirthSpouse = (DateTime)tither.DateBirthSpouse;
+                strDateBirthSpouse = myDateBirthSpouse.ToString("yyyy-MM-dd");
+            }
+
+            var strMarriegeDate = "";
+
+            if (tither.MarriegeDate != null)
+            {
+                DateTime myMarriegeDate = (DateTime)tither.MarriegeDate;
+                strMarriegeDate = myMarriegeDate.ToString("yyyy-MM-dd");
+            }
+
+            ViewBag.DateBirthSpouse = strDateBirthSpouse;
+            ViewBag.MarriegeDate = strMarriegeDate;
+
             return View(tither);
         }
 
