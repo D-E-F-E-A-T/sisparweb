@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Sispar.Core
 {
     public class Class1
+
     {
     }
 }
